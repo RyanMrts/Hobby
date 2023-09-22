@@ -1,0 +1,60 @@
+body {
+    margin: 0 auto;
+    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+main {
+    background-color: rgb(1, 0, 37);
+    color: antiquewhite;
+}
+
+img{
+    width: 300px;
+    height: 200px;
+    margin: 80px;
+    margin-top: 100px;
+    box-shadow: 5px;
+}
+img:hover {
+    width: 315px;
+    height: 215px;
+    transition: 0.7s;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 130px;
+    font-size: xx-large;
+    background-color: darkgoldenrod;
+}
+footer {
+    background-color: darkgoldenrod;
+}
+.hg-conteudo {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+}
+
+.hg-conteudo > nav {
+    order: -1;
+}
+
+.hg-conteudo > main {
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .hg-conteudo {
+        flex-flow: row;
+    }
+
+    .hg-conteudo > aside,
+    .hg-conteudo > nav {
+        flex: 0 0 200px;
+    }
+}
