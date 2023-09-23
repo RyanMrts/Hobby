@@ -34,6 +34,13 @@ header {
 footer {
     background-color: darkgoldenrod;
 }
+
+p   {
+font-size: x-large;
+font-style:italic;
+padding-left: 185px;
+} 
+
 .hg-conteudo {
     flex: 1;
     display: flex;
